@@ -1,0 +1,6 @@
+<ul>
+  <app-item *ngFor="let item of defaultList" [newItem]="item"></app-item>
+</ul>
+<button (click)="addItem()">Add Item</button>
+<!-- <button (click)="downloadFile()">Get JSON</button> -->
+<!-- <a download="test" [href]="downloadUrl">Downloar File</a> -->

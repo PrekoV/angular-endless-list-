@@ -1,0 +1,10 @@
+<li>
+  <p>{{ item.name }}</p>
+  <button (click)="addSublist()">Add Subitem</button>
+  <app-list
+    [list]="item.sublist"
+    *ngIf="item.sublist"
+    style="padding-left: 20px"
+  >
+  </app-list>
+</li>
